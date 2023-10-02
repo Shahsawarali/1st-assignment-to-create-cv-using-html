@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV HTML</title>
+    <style>
+        .printable {
+                display: none;
+            }
+
+        @media print {
+            .printable {
+               display: inline-block; 
+            }
+            .nonprintable {
+                display: none;
+            }
+            
+        }
+        
+
+    </style>
 </head>
 <body>
     <h1>cv</h1>
-    <p><b>Shahsawar Ali Shah</b></p>
+    <p><b>Shahsawar Ali Shah</b>
+    </p>
     <p>Email : shahva2022@gmail.com</p>
     <p>Address : xyz</p>
     <p>Contect : +334 1234566</p>
@@ -31,16 +49,32 @@
     <hr>
     <h2 style="color: brown;">skill</h2>
     <hr>
-    <p>
-        Web Developer, WordPress
-    </p>
-    <h2 style="color: brown;">
-        language
-    </h2>
+    <p>Web Developer, WordPress</p>
+    <h2 style="color: brown;">language</h2>
     <hr>
-    <p>
-        urdu, pushto, English
-    </p>
+    <p>urdu, pushto, English</p>
+
+    <hr>
+    <h2 style="color: brown;">Social Links</h2>
+    <ul>
+        <li class="nonprintable"><a href="https://www.facebook.com/profile.php?id=100074268997128" target="_main">Facebook:</a></li>
+        <li class="printable">
+            Facebook:<a href="https://www.facebook.com/profile.php?id=100074268997128">
+                https://www.facebook.com/profile.php?id=100074268997128
+            </a>
+        </li>
+        <li class="nonprintable"><a href="https://www.linkedin.com/in/shahsawar-ali-shah-8b610125b/" target="_main">Linkedin:</a></li>
+        <li class="printable">
+            Linkedin:<a href="https://www.linkedin.com/in/shahsawar-ali-shah-8b610125b/">
+                https://www.linkedin.com/in/shahsawar-ali-shah-8b610125b/
+            </a>
+        </li>
+        <li class="nonprintable"><a href="https://github.com/Shahsawarali" target="_main">github:</a></li>
+        <li class="printable">github:
+            <a href="https://github.com/Shahsawarali">https://github.com/Shahsawarali
+            </a>
+        </li>
+    </ul>
 
 
     
